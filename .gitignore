@@ -1,2 +1,10 @@
 /.settings/
 /.project
+
+bankonet-jee6-demo.iml
+bankonet-jee6-demo.ipr
+bankonet-jee6-demo.iws
+bankonet-jee6-demo-web/bankonet-jee6-demo-web.iml
+bankonet-jee6-demo-ejb/bankonet-jee6-demo-ejb.iml
+bankonet-jee6-demo-ear/bankonet-jee6-demo-ear.iml
+bankonet-jee6-demo-domaine/bankonet-jee6-demo-domaine.iml
