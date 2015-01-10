@@ -7,7 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>bankonet-jee6-demo-domaine</artifactId>
-    <description>This project contains the domains objects</description>
+    <description>That module contains the domains objects</description>
 
     <build>
         <finalName>${project.artifactId}</finalName>
