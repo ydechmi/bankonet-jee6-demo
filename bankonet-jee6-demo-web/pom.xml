@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>bankonet-jee6-demo</artifactId>
+        <groupId>com.yd.bankonet</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+
+    <artifactId>bankonet-jee6-demo-web</artifactId>
+    <packaging>war</packaging>
+    <name>bankonet-jee6-demo-web</name>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.yd.bankonet</groupId>
+            <artifactId>bankonet-jee6-demo-domaine</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
+        <!-- to test with TomEE and Arquillian
+        <dependency>
+          <groupId>org.apache.openejb</groupId>
+          <artifactId>arquillian-tomee-remote</artifactId>
+          <version>1.5.1</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.jboss.arquillian.junit</groupId>
+          <artifactId>arquillian-junit-container</artifactId>
+          <version>1.0.3.Final</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.11</version>
+          <scope>test</scope>
+        </dependency>
+        -->
+
+        <!-- to test with OpenEJB embedded and Arquillian
+        <dependency>
+          <groupId>org.apache.openejb</groupId>
+          <artifactId>arquillian-openejb-embedded-4</artifactId>
+          <version>4.5.1</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.jboss.arquillian.junit</groupId>
+          <artifactId>arquillian-junit-container</artifactId>
+          <version>1.0.3.Final</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.11</version>
+          <scope>test</scope>
+        </dependency>
+        -->
+    </dependencies>
+</project>

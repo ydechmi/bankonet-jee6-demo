@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>${project.artifactId} Application</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<h:outputStylesheet name="css/screen.css" />
+</h:head>
+<h:body>
+	<h:panelGroup id="page" layout="block">
+		<h:panelGroup id="header" layout="block">
+			<h:panelGroup layout="block" style="margin-left:925px">
+				<h:form id="language">
+					<p:selectOneMenu value="#{I18nBean.view.country}" valueChangeListener="#{I18nBean.languageValueChange}" onchange="document.forms['language'].submit();">
+						<f:selectItems value="#{I18nBean.view.countryList}" var ="country" itemLabel="#{country.label}" itemValue="#{country.value}"/>
+					</p:selectOneMenu>
+				</h:form>
+			</h:panelGroup>
+		</h:panelGroup>
+		<p:messages id="messages" showDetail="false" autoUpdate="true" /> 
+		<h:panelGroup id="container" layout="block">
+			<ui:insert name="content">Main Content</ui:insert>
+		</h:panelGroup>
+		<h:panelGroup id="footer" layout="block">#{messages.footerText}<br/>Generated using the Knappsack Java EE Maven Archetypes from <a href="http://www.AndyGibson.net">www.AndyGibson.net</a></h:panelGroup>
+	</h:panelGroup>
+</h:body>
+</html>

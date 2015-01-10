@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#faces#security#login.xhtml"
+  PATH="/faces/security/login.xhtml" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#faces#security#login.xhtml:0" NAME="item"
+   PATH="/faces/security/login.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#faces#accounts#home.xhtml"
+    NAME="output" PATH="/faces/accounts/home.xhtml"
+    TARGET="rules:#faces#accounts#home.xhtml" TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#faces#accounts#home.xhtml"
+  PATH="/faces/accounts/home.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

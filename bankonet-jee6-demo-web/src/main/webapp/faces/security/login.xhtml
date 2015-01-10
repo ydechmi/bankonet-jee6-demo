@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   xmlns:f="http://java.sun.com/jsf/core"
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:p="http://primefaces.org/ui"
+   template="/WEB-INF/templates/template.xhtml">
+   <ui:define name="content">
+   		<h:panelGroup id="sidebar" layout="block">			
+			<h:form id="loginForm">
+	   		 <p:panel header="#{labels['loginForm.title']}"> 
+	   			 <!--  <p:growl id="growl" showDetail="false" sticky="false" />-->
+	 			<h:panelGrid columns="2" id="matchGrid" >                     
+					<p:outputLabel for="login" value="#{labels['loginForm.login']}" />  
+					<p:inputText id="login" value="#{loginBean.view.id}" label="login" required="true" requiredMessage="#{messages['error.login']}"/> 
+					<p:outputLabel for="password" value="#{labels['loginForm.password']}" />  
+					<p:password id="password" value="#{loginBean.view.password}" label="Password" required="true" requiredMessage="#{messages['error.password']}"/> 
+					<p:commandButton id="loginSubmit" update="loginForm" value="#{labels['loginForm.submit']}"  action="#{loginBean.login()}"/>
+				</h:panelGrid>  	
+			</p:panel> 
+			</h:form>	 
+		</h:panelGroup>
+		<h:panelGroup id="content" layout="block">
+			<h1><h:outputText value="#{messages['accueil.message']}"/></h1>	
+		</h:panelGroup>
+   </ui:define>
+</ui:composition>
