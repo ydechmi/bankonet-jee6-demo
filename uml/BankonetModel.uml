@@ -1,191 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>Persistence</ID>
-  <OriginalElement>JavaeeElement:/4e5bd074/bankonet/bankonet-jee6-demo-domaine/jpa/JPA/PersistenceModel</OriginalElement>
+  <OriginalElement>JavaeeElement:/9b09f681/bankonet/bankonet-jee6-demo-domaine/jpa/JPA/PersistenceModel</OriginalElement>
   <nodes>
-    <node x="0.0" y="562.0">Client#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Client.java</node>
-    <node x="29.0" y="314.0">Utilisateur#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Utilisateur.java</node>
-    <node x="691.1004901960783" y="592.0">CompteEpargne#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteEpargne.java</node>
-    <node x="200.60437091503263" y="236.0">Langage#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/Langage.java</node>
-    <node x="869.1004901960783" y="602.0">CompteCourant#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteCourant.java</node>
-    <node x="316.25000000000006" y="612.0">Role#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/Role.java</node>
-    <node x="430.64215686274497" y="572.0">CompteCredit#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteCredit.java</node>
-    <node x="676.4154411764706" y="236.0">StatutCompte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/StatutCompte.java</node>
-    <node x="410.4154411764706" y="236.0">TypeCompte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/TypeCompte.java</node>
-    <node x="446.1004901960782" y="108.0">AbstractReference#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractReference.java</node>
-    <node x="568.392156862745" y="0.0">AbstractEntity#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractEntity.java</node>
-    <node x="1122.6004901960782" y="236.0">TypeOperation#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/TypeOperation.java</node>
-    <node x="525.4154411764706" y="236.0">TypeGestionCompte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/TypeGestionCompte.java</node>
-    <node x="596.248774509804" y="334.0">Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java</node>
-    <node x="599.7399918300655" y="740.0">CompteEdite#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteEdite.java</node>
-    <node x="1091.1004901960782" y="592.0">Operation#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Operation.java</node>
+    <node x="357.43749999999994" y="334.0">Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java</node>
+    <node x="416.9375" y="562.0">CompteCredit#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteCredit.java</node>
+    <node x="352.9246323529411" y="236.0">TypeCompte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/TypeCompte.java</node>
+    <node x="532.9375" y="108.0">AbstractReference#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractReference.java</node>
+    <node x="855.4791666666666" y="602.0">Role#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/Role.java</node>
+    <node x="18.9375" y="582.0">Operation#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Operation.java</node>
+    <node x="985.4662990196075" y="236.0">Langage#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/Langage.java</node>
+    <node x="394.14583333333326" y="0.0">AbstractEntity#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractEntity.java</node>
+    <node x="467.92463235294105" y="236.0">StatutCompte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/StatutCompte.java</node>
+    <node x="992.0318627450979" y="552.0">Client#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Client.java</node>
+    <node x="62.989991830065264" y="236.0">TypeOperation#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/TypeOperation.java</node>
+    <node x="588.924632352941" y="236.0">TypeGestionCompte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/TypeGestionCompte.java</node>
+    <node x="862.0318627450981" y="314.0">Utilisateur#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Utilisateur.java</node>
+    <node x="156.54963235294105" y="730.0">CompteEdite#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteEdite.java</node>
+    <node x="643.9375" y="582.0">CompteEpargne#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteEpargne.java</node>
+    <node x="194.93749999999994" y="592.0">CompteCourant#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteCourant.java</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="TypeCompte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/TypeCompte.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractReference.java">
+    <edge source="CompteEdite#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteEdite.java" target="Client#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Client.java">
+      <point x="50.333333333333314" y="-24.0" />
+      <point x="282.38296568627436" y="710.0" />
+      <point x="1100.531862745098" y="710.0" />
+      <point x="0.0" y="64.0" />
+    </edge>
+    <edge source="Langage#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/Langage.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractReference.java">
       <point x="0.0" y="-14.0" />
-      <point x="457.9154411764706" y="216.0" />
-      <point x="504.01715686274497" y="216.0" />
-      <point x="-11.583333333333314" y="34.0" />
-    </edge>
-    <edge source="Operation#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Operation.java" target="TypeOperation#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/TypeOperation.java">
-      <point x="19.375" y="-34.0" />
-      <point x="1187.9754901960782" y="542.0" />
-      <point x="1175.6004901960782" y="542.0" />
-      <point x="0.0" y="14.0" />
-    </edge>
-    <edge source="CompteCredit#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteCredit.java" target="Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java">
-      <point x="69.0" y="-54.0" />
-      <point x="603.142156862745" y="542.0" />
-      <point x="669.3598856209151" y="542.0" />
-      <point x="-20.888888888888914" y="64.0" />
-    </edge>
-    <edge source="AbstractReference#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractReference.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractEntity.java">
-      <point x="0.0" y="-34.0" />
-      <point x="515.6004901960782" y="88.0" />
-      <point x="611.3088235294116" y="88.0" />
-      <point x="-8.583333333333371" y="24.0" />
-    </edge>
-    <edge source="TypeOperation#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/TypeOperation.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractReference.java">
-      <point x="0.0" y="-14.0" />
-      <point x="1175.6004901960782" y="196.0" />
-      <point x="573.517156862745" y="196.0" />
+      <point x="1022.9662990196075" y="196.0" />
+      <point x="660.3541666666667" y="196.0" />
       <point x="57.91666666666674" y="34.0" />
     </edge>
-    <edge source="Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractEntity.java">
-      <point x="62.66666666666663" y="-64.0" />
-      <point x="752.9154411764705" y="289.0" />
-      <point x="787.9154411764706" y="289.0" />
-      <point x="787.9154411764706" y="88.0" />
-      <point x="628.4754901960783" y="88.0" />
-      <point x="8.583333333333371" y="24.0" />
-    </edge>
-    <edge source="Utilisateur#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Utilisateur.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractEntity.java">
-      <point x="-79.5" y="-84.0" />
-      <point x="108.5" y="289.0" />
-      <point x="190.10437091503263" y="289.0" />
-      <point x="190.10437091503263" y="78.0" />
-      <point x="594.142156862745" y="78.0" />
-      <point x="-25.75" y="24.0" />
-    </edge>
-    <edge source="CompteEdite#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteEdite.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractEntity.java">
-      <point x="50.33333333333337" y="-24.0" />
-      <point x="725.5733251633989" y="715.0" />
-      <point x="1259.5379901960782" y="715.0" />
-      <point x="1259.5379901960782" y="68.0" />
-      <point x="662.8088235294116" y="68.0" />
-      <point x="42.91666666666663" y="24.0" />
-    </edge>
-    <edge source="CompteEdite#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteEdite.java" target="Client#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Client.java">
-      <point x="-50.33333333333337" y="-24.0" />
-      <point x="624.9066584967321" y="715.0" />
-      <point x="108.5" y="715.0" />
-      <point x="0.0" y="64.0" />
-    </edge>
-    <edge source="TypeGestionCompte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/TypeGestionCompte.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractReference.java">
+    <edge source="TypeOperation#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/TypeOperation.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractReference.java">
       <point x="0.0" y="-14.0" />
-      <point x="590.9154411764706" y="216.0" />
-      <point x="527.1838235294116" y="216.0" />
-      <point x="11.583333333333371" y="34.0" />
+      <point x="115.98999183006526" y="196.0" />
+      <point x="544.5208333333334" y="196.0" />
+      <point x="-57.91666666666663" y="34.0" />
     </edge>
-    <edge source="StatutCompte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/StatutCompte.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractReference.java">
+    <edge source="TypeCompte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/TypeCompte.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractReference.java">
       <point x="0.0" y="-14.0" />
-      <point x="726.9154411764706" y="206.0" />
-      <point x="550.3504901960782" y="206.0" />
-      <point x="34.75" y="34.0" />
-    </edge>
-    <edge source="CompteEdite#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteEdite.java" target="Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java">
-      <point x="0.0" y="-24.0" />
-      <point x="675.2399918300655" y="715.0" />
-      <point x="680.6004901960782" y="715.0" />
-      <point x="680.6004901960782" y="542.0" />
-      <point x="690.248774509804" y="542.0" />
-      <point x="0.0" y="64.0" />
-    </edge>
-    <edge source="Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java" target="TypeGestionCompte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/TypeGestionCompte.java">
-      <point x="-62.66666666666663" y="-64.0" />
-      <point x="627.5821078431372" y="289.0" />
-      <point x="590.9154411764706" y="289.0" />
-      <point x="0.0" y="14.0" />
-    </edge>
-    <edge source="CompteEpargne#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteEpargne.java" target="Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java">
-      <point x="0.0" y="-34.0" />
-      <point x="770.1004901960783" y="542.0" />
-      <point x="711.1376633986929" y="542.0" />
-      <point x="20.888888888888914" y="64.0" />
-    </edge>
-    <edge source="CompteCourant#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/CompteCourant.java" target="Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java">
-      <point x="-1.1368683772161603E-13" y="-24.0" />
-      <point x="970.1004901960782" y="532.0" />
-      <point x="732.0265522875816" y="532.0" />
-      <point x="41.777777777777715" y="64.0" />
-    </edge>
-    <edge source="Role#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/Role.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractReference.java">
-      <point x="13.75" y="-14.0" />
-      <point x="357.50000000000006" y="206.0" />
-      <point x="480.8504901960782" y="206.0" />
+      <point x="400.4246323529411" y="206.0" />
+      <point x="567.6875" y="206.0" />
       <point x="-34.75" y="34.0" />
     </edge>
-    <edge source="Client#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Client.java" target="Utilisateur#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Utilisateur.java">
-      <point x="1.4210854715202004E-14" y="-64.0" />
-      <point x="-79.5" y="84.0" />
-    </edge>
-    <edge source="Client#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Client.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractEntity.java">
-      <point x="-72.33333333333326" y="-64.0" />
-      <point x="36.16666666666674" y="542.0" />
-      <point x="18.5" y="542.0" />
-      <point x="18.5" y="68.0" />
-      <point x="576.9754901960783" y="68.0" />
-      <point x="-42.91666666666663" y="24.0" />
-    </edge>
-    <edge source="Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java" target="StatutCompte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/StatutCompte.java">
-      <point x="0.0" y="-64.0" />
-      <point x="690.248774509804" y="289.0" />
-      <point x="726.9154411764706" y="289.0" />
-      <point x="0.0" y="14.0" />
-    </edge>
-    <edge source="Langage#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/Langage.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractReference.java">
-      <point x="0.0" y="-14.0" />
-      <point x="238.10437091503263" y="196.0" />
-      <point x="457.6838235294116" y="196.0" />
-      <point x="-57.916666666666686" y="34.0" />
-    </edge>
-    <edge source="Client#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Client.java" target="Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java">
-      <point x="72.33333333333331" y="-64.0" />
-      <point x="180.83333333333331" y="512.0" />
-      <point x="606.6932189542483" y="512.0" />
-      <point x="-83.55555555555554" y="64.0" />
-    </edge>
-    <edge source="Utilisateur#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Utilisateur.java" target="Langage#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/Langage.java">
-      <point x="79.5" y="-84.0" />
-      <point x="267.5" y="289.0" />
-      <point x="238.10437091503263" y="289.0" />
-      <point x="0.0" y="14.0" />
-    </edge>
-    <edge source="Operation#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Operation.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/AbstractEntity.java">
+    <edge source="Operation#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Operation.java" target="Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java">
       <point x="58.125" y="-34.0" />
-      <point x="1226.7254901960782" y="542.0" />
-      <point x="1239.1004901960782" y="542.0" />
-      <point x="1239.1004901960782" y="78.0" />
-      <point x="645.642156862745" y="78.0" />
+      <point x="154.5625" y="512.0" />
+      <point x="388.77083333333326" y="512.0" />
+      <point x="-62.666666666666686" y="64.0" />
+    </edge>
+    <edge source="Utilisateur#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Utilisateur.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractEntity.java">
+      <point x="79.49999999999989" y="-84.0" />
+      <point x="1100.531862745098" y="294.0" />
+      <point x="1070.9662990196075" y="294.0" />
+      <point x="1070.9662990196075" y="78.0" />
+      <point x="471.39583333333326" y="78.0" />
       <point x="25.75" y="24.0" />
     </edge>
-    <edge source="Role#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/reference/Role.java" target="Utilisateur#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/utilisateur/Utilisateur.java">
-      <point x="-13.75" y="-14.0" />
-      <point x="330.00000000000006" y="502.0" />
-      <point x="267.5" y="502.0" />
-      <point x="79.5" y="84.0" />
+    <edge source="CompteEdite#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteEdite.java" target="Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java">
+      <point x="0.0" y="-24.0" />
+      <point x="232.04963235294105" y="700.0" />
+      <point x="184.4375" y="700.0" />
+      <point x="184.4375" y="522.0" />
+      <point x="409.6597222222222" y="522.0" />
+      <point x="-41.77777777777777" y="64.0" />
     </edge>
-    <edge source="Operation#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Operation.java" target="Compte#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Compte.java">
+    <edge source="Operation#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Operation.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractEntity.java">
       <point x="-58.125" y="-34.0" />
-      <point x="1110.4754901960782" y="522.0" />
-      <point x="752.9154411764705" y="522.0" />
+      <point x="38.3125" y="532.0" />
+      <point x="20.4375" y="532.0" />
+      <point x="20.4375" y="78.0" />
+      <point x="419.89583333333326" y="78.0" />
+      <point x="-25.75" y="24.0" />
+    </edge>
+    <edge source="Client#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Client.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractEntity.java">
+      <point x="72.33333333333326" y="-64.0" />
+      <point x="1172.8651960784312" y="532.0" />
+      <point x="1190.531862745098" y="532.0" />
+      <point x="1190.531862745098" y="68.0" />
+      <point x="488.5625" y="68.0" />
+      <point x="42.916666666666686" y="24.0" />
+    </edge>
+    <edge source="Utilisateur#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Utilisateur.java" target="Langage#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/Langage.java">
+      <point x="-79.50000000000011" y="-84.0" />
+      <point x="941.531862745098" y="294.0" />
+      <point x="1022.9662990196075" y="294.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="CompteEpargne#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteEpargne.java" target="Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java">
+      <point x="0.0" y="-34.0" />
+      <point x="722.9375" y="512.0" />
+      <point x="514.1041666666665" y="512.0" />
       <point x="62.66666666666663" y="64.0" />
     </edge>
+    <edge source="Client#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Client.java" target="Utilisateur#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Utilisateur.java">
+      <point x="0.0" y="-64.0" />
+      <point x="79.49999999999989" y="84.0" />
+    </edge>
+    <edge source="AbstractReference#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractReference.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractEntity.java">
+      <point x="0.0" y="-34.0" />
+      <point x="602.4375" y="88.0" />
+      <point x="454.22916666666663" y="88.0" />
+      <point x="8.583333333333314" y="24.0" />
+    </edge>
+    <edge source="Client#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Client.java" target="Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java">
+      <point x="-72.33333333333326" y="-64.0" />
+      <point x="1028.1985294117646" y="502.0" />
+      <point x="534.9930555555554" y="502.0" />
+      <point x="83.55555555555554" y="64.0" />
+    </edge>
+    <edge source="Role#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/Role.java" target="Utilisateur#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/utilisateur/Utilisateur.java">
+      <point x="13.75" y="-14.0" />
+      <point x="896.7291666666666" y="532.0" />
+      <point x="941.5318627450981" y="532.0" />
+      <point x="-79.5" y="84.0" />
+    </edge>
+    <edge source="Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractEntity.java">
+      <point x="-62.66666666666663" y="-64.0" />
+      <point x="388.7708333333333" y="284.0" />
+      <point x="52.489991830065264" y="284.0" />
+      <point x="52.489991830065264" y="88.0" />
+      <point x="437.0625" y="88.0" />
+      <point x="-8.583333333333314" y="24.0" />
+    </edge>
+    <edge source="Operation#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Operation.java" target="TypeOperation#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/TypeOperation.java">
+      <point x="-19.375" y="-34.0" />
+      <point x="76.29963235294099" y="294.0" />
+      <point x="115.98999183006526" y="294.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="TypeGestionCompte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/TypeGestionCompte.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractReference.java">
+      <point x="0.0" y="-14.0" />
+      <point x="654.424632352941" y="216.0" />
+      <point x="614.0208333333334" y="216.0" />
+      <point x="11.583333333333371" y="34.0" />
+    </edge>
+    <edge source="Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java" target="StatutCompte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/StatutCompte.java">
+      <point x="0.0" y="-64.0" />
+      <point x="451.43749999999994" y="284.0" />
+      <point x="518.424632352941" y="284.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="CompteEdite#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteEdite.java" target="AbstractEntity#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractEntity.java">
+      <point x="-50.333333333333314" y="-24.0" />
+      <point x="181.71629901960773" y="710.0" />
+      <point x="0.0" y="710.0" />
+      <point x="0.0" y="68.0" />
+      <point x="402.72916666666663" y="68.0" />
+      <point x="-42.916666666666686" y="24.0" />
+    </edge>
+    <edge source="CompteCourant#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteCourant.java" target="Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java">
+      <point x="0.0" y="-24.0" />
+      <point x="295.93749999999994" y="532.0" />
+      <point x="430.54861111111103" y="532.0" />
+      <point x="-20.888888888888914" y="64.0" />
+    </edge>
+    <edge source="Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java" target="TypeGestionCompte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/TypeGestionCompte.java">
+      <point x="62.66666666666663" y="-64.0" />
+      <point x="514.1041666666665" y="294.0" />
+      <point x="654.424632352941" y="294.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Role#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/Role.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractReference.java">
+      <point x="-13.75" y="-14.0" />
+      <point x="869.2291666666666" y="532.0" />
+      <point x="851.531862745098" y="532.0" />
+      <point x="851.531862745098" y="206.0" />
+      <point x="637.1875" y="206.0" />
+      <point x="34.75" y="34.0" />
+    </edge>
+    <edge source="CompteCredit#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteCredit.java" target="Compte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/Compte.java">
+      <point x="0.0" y="-54.0" />
+      <point x="520.4375" y="532.0" />
+      <point x="472.3263888888888" y="532.0" />
+      <point x="20.888888888888857" y="64.0" />
+    </edge>
+    <edge source="StatutCompte#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/reference/StatutCompte.java" target="AbstractReference#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/AbstractReference.java">
+      <point x="0.0" y="-14.0" />
+      <point x="518.424632352941" y="216.0" />
+      <point x="590.8541666666666" y="216.0" />
+      <point x="-11.583333333333371" y="34.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.3564356435643564" x="630.0" y="394.0" />
+  <settings layout="Hierarchic Group" zoom="0.45284552845528453" x="605.0" y="389.0" />
   <SelectedNodes>
-    <node>Operation#file://D:/Projets/workspace_IntelliJ/jee-application-samples/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/sqli/bankonet/domaine/compte/Operation.java</node>
+    <node>CompteCourant#file://D:/Projets/workspace_IntelliJ/bankonet-jee6-demo/bankonet-jee6-demo-domaine/src/main/java/com/yd/bankonet/domaine/compte/CompteCourant.java</node>
   </SelectedNodes>
   <Categories>
     <Category>Properties</Category>
