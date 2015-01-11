@@ -1,16 +1,14 @@
 package com.yd.bankonet.dao.reference;
 
-import javax.ejb.LocalBean;
-import javax.ejb.Stateless;
-
 import com.yd.bankonet.dao.AbstractDao;
 import com.yd.bankonet.domaine.reference.TypeGestionCompte;
+
+import javax.ejb.Stateless;
 
 /**
  * Session Bean implementation class TypeGestionCompteDaoBean
  */
 @Stateless
-@LocalBean
 public class TypeGestionCompteDaoBean extends AbstractDao<TypeGestionCompte, Integer> {
 
     /**

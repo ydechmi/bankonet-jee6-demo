@@ -3,14 +3,12 @@ package com.yd.bankonet.dao.reference;
 import com.yd.bankonet.dao.AbstractDao;
 import com.yd.bankonet.domaine.reference.StatutCompte;
 
-import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 
 /**
  * Session Bean implementation class StatutCompteDaoBean
  */
 @Stateless
-@LocalBean
 public class StatutCompteDaoBean extends AbstractDao<StatutCompte,Integer> {
        
     /**
