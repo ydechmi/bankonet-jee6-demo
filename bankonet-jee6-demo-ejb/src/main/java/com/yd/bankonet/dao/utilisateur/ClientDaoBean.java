@@ -3,14 +3,12 @@ package com.yd.bankonet.dao.utilisateur;
 import com.yd.bankonet.dao.AbstractDao;
 import com.yd.bankonet.domaine.utilisateur.Client;
 
-import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 
 /**
  * Session Bean implementation class ClientDaoBean
  */
 @Stateless
-@LocalBean
 public class ClientDaoBean extends AbstractDao<Client,Long> {
        
     /**

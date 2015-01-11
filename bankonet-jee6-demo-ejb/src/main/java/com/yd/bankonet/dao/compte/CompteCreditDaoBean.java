@@ -1,16 +1,14 @@
 package com.yd.bankonet.dao.compte;
 
-import javax.ejb.LocalBean;
-import javax.ejb.Stateless;
-
 import com.yd.bankonet.dao.AbstractDao;
 import com.yd.bankonet.domaine.compte.CompteCredit;
+
+import javax.ejb.Stateless;
 
 /**
  * Session Bean implementation class CompteCreditDaoBean
  */
 @Stateless
-@LocalBean
 public class CompteCreditDaoBean extends AbstractDao<CompteCredit, Long> {
 
     /**
