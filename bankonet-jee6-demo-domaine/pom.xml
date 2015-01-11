@@ -7,6 +7,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>bankonet-jee6-demo-domaine</artifactId>
+    <packaging>jar</packaging>
+    <name>bankonet-jee6-demo-domaine</name>
     <description>That module contains the domains objects</description>
 
     <build>
