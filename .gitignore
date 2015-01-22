@@ -1,6 +1,6 @@
 /.settings/
 /.project
-
+/.idea/
 *.iml
-*.ipr
 *.iws
+*.ipr
