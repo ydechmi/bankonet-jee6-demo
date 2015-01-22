@@ -36,8 +36,15 @@ public class StatutCompte extends AbstractReference {
 	 */
 	public StatutCompte() {
 		
-	}	
-	
-	
+	}
 
+    /**
+     * Constructeur avec paramètres
+     *
+     * @param code    code de l'objet
+     * @param libelle libelle de l'objet
+     */
+    public StatutCompte(String code, String libelle) {
+        super(code, libelle);
+    }
 }

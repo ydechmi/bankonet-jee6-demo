@@ -45,18 +45,30 @@ public class Role extends AbstractReference {
 
 	}
 
-	/**
+    /**
+     * Constructeur avec paramètres
+     *
+     * @param code    code de l'objet
+     * @param libelle libelle de l'objet
+     */
+    public Role(String code, String libelle) {
+        super(code, libelle);
+    }
+
+    /**
 	 * @return the users
 	 */
 	public List<Utilisateur> getUsers() {
-		return users;
+
+        return users;
 	}
 
 	/**
 	 * @param users the users to set
 	 */
 	public void setUsers(List<Utilisateur> users) {
-		this.users = users;
+
+        this.users = users;
 	}
 	
 	

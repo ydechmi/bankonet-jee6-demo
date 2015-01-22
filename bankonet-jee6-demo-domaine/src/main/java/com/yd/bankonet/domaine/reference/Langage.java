@@ -3,13 +3,9 @@
  */
 package com.yd.bankonet.domaine.reference;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.AttributeOverrides;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
 import com.yd.bankonet.domaine.AbstractReference;
+
+import javax.persistence.*;
 
 /**
  * @author ydechmi
@@ -31,15 +27,19 @@ public class Langage extends AbstractReference {
 	
 
 	/**
-	 * 
+	 * Constructeur par défaut
 	 */
 	public Langage() {
 		
 	}
 
-
-	
-	
-
-
+    /**
+     * Constructeur avec paramètres
+     *
+     * @param code    code du langage
+     * @param libelle libelle du langage
+     */
+    public Langage(String code, String libelle) {
+        super(code, libelle);
+    }
 }

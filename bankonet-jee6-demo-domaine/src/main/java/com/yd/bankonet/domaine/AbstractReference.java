@@ -25,10 +25,21 @@ public class AbstractReference extends AbstractEntity<Integer> {
 	 * 
 	 */
 	public AbstractReference() {
-		// TODO Auto-generated constructor stub
+
 	}
 
-	/**
+    /**
+     * Constructeur avec paramètres
+     *
+     * @param code code de l'objet
+     * @param libelle libelle de l'objet
+     */
+    public AbstractReference(String code, String libelle) {
+        this.code = code;
+        this.libelle = libelle;
+    }
+
+    /**
 	 * @return the code
 	 */
 	public String getCode() {
