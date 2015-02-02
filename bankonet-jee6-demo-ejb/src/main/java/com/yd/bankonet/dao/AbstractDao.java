@@ -22,7 +22,6 @@ public abstract class AbstractDao<T,ID> {
 	 * 
 	 */
 	public AbstractDao() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	/**
@@ -41,7 +40,7 @@ public abstract class AbstractDao<T,ID> {
 	}
 
 	/**
-	 * @param entity
+	 * @param entity the entity to persist
 	 */
 	public void persist(T entity){
 		entityManager.persist(entity);
@@ -49,7 +48,7 @@ public abstract class AbstractDao<T,ID> {
 	}
 	
 	/**
-	 * @param id
+	 * @param id the id of entity to remove
 	 */
 	public void removeById(ID id){
 		
@@ -59,7 +58,7 @@ public abstract class AbstractDao<T,ID> {
 	}
 	
 	/**
-	 * @param entity
+	 * @param entity the entity to update
 	 */
 	public void update(T entity){
 		entityManager.refresh(entity);
@@ -67,8 +66,8 @@ public abstract class AbstractDao<T,ID> {
 	}
 	
 	/**
-	 * @param id
-	 * @return
+	 * @param id the id of entity to search
+	 * @return entity
 	 */
 	public T findById(ID id){
 		
@@ -76,7 +75,7 @@ public abstract class AbstractDao<T,ID> {
 	}
 	
 	/**
-	 * @return
+	 * @return entity class
 	 */
 	public abstract Class<T> getEntityClass();
 

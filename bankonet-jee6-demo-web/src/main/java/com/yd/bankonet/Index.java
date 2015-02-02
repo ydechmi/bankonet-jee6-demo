@@ -16,15 +16,14 @@
  */
 package com.yd.bankonet;
 
-import java.io.IOException;
+import com.yd.bankonet.domaine.reference.AccountStatus;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.yd.bankonet.domaine.reference.StatutCompte;
+import java.io.IOException;
 
 @WebServlet(urlPatterns = "/index")
 public class Index extends HttpServlet {
@@ -39,9 +38,9 @@ public class Index extends HttpServlet {
     protected void service(final HttpServletRequest request, final HttpServletResponse response)
             throws ServletException, IOException {
    
-    	StatutCompte statutCompte=new StatutCompte();
-    	statutCompte.setCode("test");
-    	statutCompte.setLibelle("test");
+    	AccountStatus accountStatus =new AccountStatus();
+    	accountStatus.setCode("test");
+    	accountStatus.setLabel("test");
     	
     	System.out.println("ok");
         response.getWriter().write("Index");

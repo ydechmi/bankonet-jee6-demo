@@ -5,22 +5,22 @@
 		
 		<jta-data-source>java:/jdbc/BankonetDB</jta-data-source>
 		<!-- <non-jta-data-source>jdbc/BankonetDS</non-jta-data-source>-->
-		<class>com.yd.bankonet.domaine.compte.Compte</class>
-		<class>com.yd.bankonet.domaine.compte.CompteCourant</class>
-		<class>com.yd.bankonet.domaine.compte.CompteCredit</class>
-		<class>com.yd.bankonet.domaine.compte.CompteEdite</class>
-		<class>com.yd.bankonet.domaine.compte.CompteEpargne</class>
-		<class>com.yd.bankonet.domaine.utilisateur.Utilisateur</class>
-		<class>com.yd.bankonet.domaine.utilisateur.Client</class>
+		<class>com.yd.bankonet.domaine.accounts.Account</class>
+		<class>com.yd.bankonet.domaine.accounts.CheckingAccount</class>
+		<class>com.yd.bankonet.domaine.accounts.AccountCredit</class>
+		<class>com.yd.bankonet.domaine.accounts.AccountEdition</class>
+		<class>com.yd.bankonet.domaine.accounts.SavingsAccount</class>
+		<class>com.yd.bankonet.domaine.users.User</class>
+		<class>com.yd.bankonet.domaine.users.Customer</class>
 		<class>com.yd.bankonet.domaine.reference.Role</class>
-		<class>com.yd.bankonet.domaine.reference.StatutCompte</class>
+		<class>com.yd.bankonet.domaine.reference.AccountStatus</class>
 		<class>com.yd.bankonet.domaine.AbstractEntity</class>
 		<class>com.yd.bankonet.domaine.AbstractReference</class>
-		<class>com.yd.bankonet.domaine.reference.Langage</class>
-		<class>com.yd.bankonet.domaine.reference.TypeCompte</class>
-		<class>com.yd.bankonet.domaine.reference.TypeGestionCompte</class>
-		<class>com.yd.bankonet.domaine.reference.TypeOperation</class>
-		<class>com.yd.bankonet.domaine.compte.Operation</class>
+		<class>com.yd.bankonet.domaine.reference.Language</class>
+		<class>com.yd.bankonet.domaine.reference.AccountType</class>
+		<class>com.yd.bankonet.domaine.reference.AccountManagementType</class>
+		<class>com.yd.bankonet.domaine.reference.OperationType</class>
+		<class>com.yd.bankonet.domaine.accounts.Operation</class>
 		<properties>
 			<property name="eclipselink.logging.level.sql" value="ALL" />
 			<property name="eclipselink.logging.level" value="ALL" />

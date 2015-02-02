@@ -3,20 +3,19 @@
  */
 package com.yd.bankonet.domaine;
 
-import java.io.Serializable;
-
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 /**
  * @author ydechmi
  *
  */
 @MappedSuperclass
-public abstract class AbstractEntity<ID> implements Serializable {
+public abstract class AbstractEntity<ID extends Serializable> implements Serializable {
 
 	/**
 	 * 
