@@ -24,7 +24,7 @@ public abstract class AbstractEntity<ID extends Serializable> implements Seriali
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@NotNull	
+    @NotNull
 	private ID id;
 
 	/**
