@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="bankonet" transaction-type="JTA">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <jta-data-source>Bankonet</jta-data-source>
+		<class>com.yd.bankonet.domaine.accounts.Account</class>
+		<class>com.yd.bankonet.domaine.accounts.CheckingAccount</class>
+		<class>com.yd.bankonet.domaine.accounts.AccountCredit</class>
+		<class>com.yd.bankonet.domaine.accounts.AccountEdition</class>
+		<class>com.yd.bankonet.domaine.accounts.SavingsAccount</class>
+		<class>com.yd.bankonet.domaine.users.User</class>
+		<class>com.yd.bankonet.domaine.users.Customer</class>
+		<class>com.yd.bankonet.domaine.reference.Role</class>
+		<class>com.yd.bankonet.domaine.reference.AccountStatus</class>
+		<class>com.yd.bankonet.domaine.AbstractEntity</class>
+		<class>com.yd.bankonet.domaine.AbstractReference</class>
+		<class>com.yd.bankonet.domaine.reference.Language</class>
+		<class>com.yd.bankonet.domaine.reference.AccountType</class>
+		<class>com.yd.bankonet.domaine.reference.AccountManagementType</class>
+		<class>com.yd.bankonet.domaine.reference.OperationType</class>
+		<class>com.yd.bankonet.domaine.accounts.Operation</class>
+		<properties>
+            <!--<property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:BankonetDB;create=true"/>
+            <property name="javax.persistence.jdbc.user" value="toto"/>
+            <property name="javax.persistence.jdbc.password" value=""/>-->
+            <property name="eclipselink.target-database" value="HSQL"/>
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+            <property name="eclipselink.logging.level.sql" value="ALL" />
+            <property name="eclipselink.logging.level" value="FINER" />
+            <property name="eclipselink.logging.parameters" value="true" />
+            <property name="eclipselink.logging.logger" value="ServerLogger"/>
+            <property name="eclipselink.logging.file" value="D:\logs\eclipselink.log"/>
+		</properties>
+	</persistence-unit>
+</persistence>
