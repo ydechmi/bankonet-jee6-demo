@@ -24,10 +24,6 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>com.yd.bankonet</groupId>
@@ -45,46 +41,18 @@
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
         </dependency>
-        <!-- to test with TomEE and Arquillian
-        <dependency>
-          <groupId>org.apache.openejb</groupId>
-          <artifactId>arquillian-tomee-remote</artifactId>
-          <version>1.5.1</version>
-          <scope>test</scope>
-        </dependency>
-        <dependency>
-          <groupId>org.jboss.arquillian.junit</groupId>
-          <artifactId>arquillian-junit-container</artifactId>
-          <version>1.0.3.Final</version>
-          <scope>test</scope>
-        </dependency>
-        <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-          <version>4.11</version>
-          <scope>test</scope>
-        </dependency>
-        -->
 
-        <!-- to test with OpenEJB embedded and Arquillian
+        <!-- Library for testing-->
         <dependency>
-          <groupId>org.apache.openejb</groupId>
-          <artifactId>arquillian-openejb-embedded-4</artifactId>
-          <version>4.5.1</version>
-          <scope>test</scope>
+            <groupId>org.jboss.arquillian.junit</groupId>
+            <artifactId>arquillian-junit-container</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
-          <groupId>org.jboss.arquillian.junit</groupId>
-          <artifactId>arquillian-junit-container</artifactId>
-          <version>1.0.3.Final</version>
-          <scope>test</scope>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
-        <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-          <version>4.11</version>
-          <scope>test</scope>
-        </dependency>
-        -->
+
+
     </dependencies>
 </project>
