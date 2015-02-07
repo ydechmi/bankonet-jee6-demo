@@ -16,6 +16,7 @@ public abstract class AbstractDao<T,ID> {
 	/**
 	 * 
 	 */
+    @PersistenceContext(unitName ="bankonet")
 	private EntityManager entityManager;
 
 	/**
@@ -31,13 +32,6 @@ public abstract class AbstractDao<T,ID> {
 		return entityManager;
 	}
 
-	/**
-	 * @param entityManager the entityManager to set
-	 */
-	@PersistenceContext(unitName="bankonet")
-	public void setEntityManager(EntityManager entityManager) {
-		this.entityManager = entityManager;
-	}
 
 	/**
 	 * @param entity the entity to persist
@@ -61,7 +55,8 @@ public abstract class AbstractDao<T,ID> {
 	 * @param entity the entity to update
 	 */
 	public void update(T entity){
-		entityManager.refresh(entity);
+        T entityToRefresh=entityManager.merge(entity);
+        entityManager.persist(entityToRefresh);
 		entityManager.flush();
 	}
 	
