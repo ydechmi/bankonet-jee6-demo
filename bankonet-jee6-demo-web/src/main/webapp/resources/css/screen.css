@@ -1,29 +1,28 @@
 body {
-	margin: 2;
+	margin: 2px;
 	padding: 0;
 	background-color: #EAECEE;
 	font-family: Verdana, sans-serif;
 	font-size: 10px;
 }
 
+input{
+    width: 180px;
+    font-family: Arial;
+}
+label{
+    width: auto;
+    font-family: Arial;
+}
 #header {
 	height: 60px;
 	border-bottom: 1px solid #c0c0c0;
 	background: #FFFFFF;
-	color: #f0f0f0;
 	margin: 0;
 	padding: 0;
  
 }
 
-#header h1 {
-	padding-top: 20px;
-	font-size: 250%;
-}
-
-#header a {
-	color : #f0f0f0;
-}
 
 #page {
 	background: #ffffff;
@@ -36,10 +35,11 @@ body {
 }
 
 #sidebar {
-	float: right;
-	width: 255px;	
+	width: 300px;
+    margin-left: 350px;
+    margin-top: 100px;
 	border: 0px solid #d0d0d0;
-	min-height: 200px;
+	min-height: 300px;
 	padding: 4px;
 }
 
@@ -133,3 +133,4 @@ body {
 .property {
 	margin-bottom: 12px;
 }
+
