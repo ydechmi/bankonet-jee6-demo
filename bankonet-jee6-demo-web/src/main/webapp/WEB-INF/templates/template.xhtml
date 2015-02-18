@@ -13,13 +13,7 @@
 <h:body>
 	<h:panelGroup id="page" layout="block">
 		<h:panelGroup id="header" layout="block">
-			<h:panelGroup layout="block" style="margin-left:925px">
-				<h:form id="language">
-					<p:selectOneMenu value="#{I18nBean.view.country}" valueChangeListener="#{I18nBean.languageValueChange}" onchange="document.forms['language'].submit();">
-						<f:selectItems value="#{I18nBean.view.countryList}" var ="country" itemLabel="#{country.label}" itemValue="#{country.value}"/>
-					</p:selectOneMenu>
-				</h:form>
-			</h:panelGroup>
+            <ui:insert name="header"/>
 		</h:panelGroup>
 		<p:messages id="messages" showDetail="false" autoUpdate="true" /> 
 		<h:panelGroup id="container" layout="block">
