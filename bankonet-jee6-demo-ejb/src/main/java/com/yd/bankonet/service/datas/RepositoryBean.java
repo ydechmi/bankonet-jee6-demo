@@ -15,8 +15,8 @@ import java.util.Locale;
  * Created by ydechmi on 11/01/2015.
  *
  */
-@Stateless(name = "RepositoryService")
-public class RepositoryBean{
+@Stateless
+public class RepositoryBean implements RepositoryService{
 
     @EJB
     private LanguageDaoBean languageDao;
@@ -48,7 +48,7 @@ public class RepositoryBean{
     /**
      * Method to insert Language data into database
      */
-    public void insertLanguages() {
+    private void insertLanguages() {
         List<Language> languages=new ArrayList<>(2);
         languages.add(new Language(Locale.FRENCH.getLanguage(),Locale.FRENCH.getDisplayLanguage()));
         languages.add(new Language(Locale.ENGLISH.getLanguage(),Locale.ENGLISH.getDisplayLanguage()));
@@ -61,7 +61,7 @@ public class RepositoryBean{
     /**
      * Method to insert user's roles into database
      */
-    public void insertRoles() {
+    private void insertRoles() {
         List<Role> roles=new ArrayList<>(3);
         roles.add(new Role("ADMINSTRATEUR","Administrateur"));
         roles.add(new Role("MANAGER","Manager"));
@@ -75,7 +75,7 @@ public class RepositoryBean{
     /**
      * Method to insert account's status
      */
-    public void insertAccountStatus() {
+    private void insertAccountStatus() {
         List<AccountStatus> statuts=new ArrayList<>(2);
         statuts.add(new AccountStatus("CREATED","Crée"));
         statuts.add(new AccountStatus("DELETED","Supprimé"));
@@ -89,7 +89,7 @@ public class RepositoryBean{
     /**
      * Method to insert account's types
      */
-    public void insertAccountTypes() {
+    private void insertAccountTypes() {
         List<AccountType> accountTypes=new ArrayList<>(3);
         accountTypes.add(new AccountType("CCO","Compte Courant"));
         accountTypes.add(new AccountType("CCR","Compte Crédit"));
@@ -103,7 +103,7 @@ public class RepositoryBean{
     /**
      * Method to load account's type management
      */
-    public void insertAccountManagementType() {
+    private void insertAccountManagementType() {
         List<AccountManagementType> types=new ArrayList<>(4);
         types.add(new AccountManagementType("CHQ","Compe chèque"));
         types.add(new AccountManagementType("FOR1","Forfait entrée de gamme"));
@@ -119,7 +119,7 @@ public class RepositoryBean{
     /**
      * Method to load operation's types into database
      */
-    public void insertOperationTypes() {
+    private void insertOperationTypes() {
         List<OperationType> operationTypes=new ArrayList<>(3);
         operationTypes.add(new OperationType("RET","Retrait"));
         operationTypes.add(new OperationType("CRE","Crédit"));
@@ -130,12 +130,29 @@ public class RepositoryBean{
         }
     }
 
-    public void insertCustomer() {
+    /**
+     *
+     */
+    private void insertCustomer() {
 
     }
 
+    /**
+     *
+     */
+    private void insertUsers() {
 
-    public void insertUsers() {
+    }
 
+    @Override
+    public void loadData() {
+        insertAccountManagementType();
+        insertAccountStatus();
+        insertAccountTypes();
+        insertCustomer();
+        insertLanguages();
+        insertOperationTypes();
+        insertRoles();
+        insertUsers();
     }
 }
