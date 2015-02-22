@@ -5,6 +5,7 @@ package com.yd.bankonet.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.List;
 
 /**
  * @author ydechmi
@@ -68,7 +69,15 @@ public abstract class AbstractDao<T,ID> {
 		
 		return entityManager.find(getEntityClass(), id);
 	}
-	
+
+    /**
+     *
+     * @return list of entity
+     */
+    public List<T> findAll(){
+        return getEntityManager().createQuery("SELECT a FROM "+getEntityClass().getName()+" a").getResultList();
+    }
+
 	/**
 	 * @return entity class
 	 */
