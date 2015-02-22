@@ -1,6 +1,5 @@
 package com.yd.bankonet.service.datas;
 
-import javax.ejb.Local;
 import javax.ejb.Remote;
 
 /**
@@ -8,7 +7,6 @@ import javax.ejb.Remote;
  *
  */
 @Remote
-@Local
 public interface RepositoryService {
 
     /**
