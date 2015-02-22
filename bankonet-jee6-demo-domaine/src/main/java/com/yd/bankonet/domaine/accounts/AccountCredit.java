@@ -10,7 +10,12 @@ import java.util.Date;
  * @author ydechmi
  */
 @Entity
+@NamedQueries({
+        @NamedQuery(name="AccountCredit.findByCodeBank",
+                query="SELECT a FROM AccountCredit a where a.codeBank=:codeBank")
+})
 @DiscriminatorValue("CCR")
+
 public class AccountCredit extends Account {
 
     /**
