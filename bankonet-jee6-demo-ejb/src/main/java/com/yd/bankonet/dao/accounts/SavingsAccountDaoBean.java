@@ -25,7 +25,5 @@ public class SavingsAccountDaoBean extends AbstractDao<SavingsAccount,Long> {
 	public Class<SavingsAccount> getEntityClass() {
 		return SavingsAccount.class;
 	}
-    
-    
 
 }
