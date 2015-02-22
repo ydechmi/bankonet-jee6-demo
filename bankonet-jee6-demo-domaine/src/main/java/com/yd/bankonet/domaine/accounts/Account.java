@@ -69,6 +69,7 @@ public abstract class Account extends AbstractEntity<Long> {
 
 
     /**
+     *
      * @return the operationsDebit
      */
     public List<Operation> getOperationsDebit() {
@@ -99,67 +100,129 @@ public abstract class Account extends AbstractEntity<Long> {
         this.operationsCredit = operationsCredit;
     }
 
-
+    /**
+     *
+     * @return codeBank
+     */
     public String getCodeBank() {
         return codeBank;
     }
 
+    /**
+     *
+     * @param codeBank to set
+     */
     public void setCodeBank(String codeBank) {
         this.codeBank = codeBank;
     }
 
+    /**
+     *
+     * @return codeCashDesk
+     */
     public String getCodeCashDesk() {
         return codeCashDesk;
     }
 
+    /**
+     *
+     * @param codeCashDesk to set
+     */
     public void setCodeCashDesk(String codeCashDesk) {
         this.codeCashDesk = codeCashDesk;
     }
 
+    /**
+     *
+     * @return customer
+     */
     public Customer getCustomer() {
         return customer;
     }
 
+    /**
+     *
+     * @param customer to set
+     */
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
 
+    /**
+     *
+     * @return Key
+     */
     public String getKey() {
         return key;
     }
 
+    /**
+     *
+     * @param key to set
+     */
     public void setKey(String key) {
         this.key = key;
     }
 
+    /**
+     *
+     * @return label
+     */
     public String getLabel() {
         return label;
     }
 
+    /**
+     * @param label to set
+     */
     public void setLabel(String label) {
         this.label = label;
     }
 
+    /**
+     *
+     * @return accountManagementType
+     */
     public AccountManagementType getManagementType() {
         return managementType;
     }
 
+    /**
+     *
+     * @param managementType to set
+     */
     public void setManagementType(AccountManagementType managementType) {
         this.managementType = managementType;
     }
 
+    /**
+     *
+     * @return number
+     */
     public long getNumber() {
         return number;
     }
 
+    /**
+     *
+     * @param number to set
+     */
     public void setNumber(long number) {
         this.number = number;
     }
 
+    /**
+     *
+     * @return status
+     */
     public AccountStatus getStatus() {
         return status;
     }
 
+    /**
+     *
+     * @param status to set
+     */
     public void setStatus(AccountStatus status) {
         this.status = status;
     }
