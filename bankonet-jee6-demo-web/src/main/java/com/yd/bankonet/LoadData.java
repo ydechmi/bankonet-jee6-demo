@@ -16,8 +16,9 @@
  */
 package com.yd.bankonet;
 
-import com.yd.bankonet.domaine.reference.AccountStatus;
+import com.yd.bankonet.service.datas.RepositoryService;
 
+import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,9 +26,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/index")
-public class Index extends HttpServlet {
-	
+@WebServlet(urlPatterns = "/loadData")
+public class LoadData extends HttpServlet {
+
+    @EJB
+    private RepositoryService repositoryService;
 	
     /**
 	 * 
@@ -37,12 +40,14 @@ public class Index extends HttpServlet {
 	@Override
     protected void service(final HttpServletRequest request, final HttpServletResponse response)
             throws ServletException, IOException {
-   
-    	AccountStatus accountStatus =new AccountStatus();
-    	accountStatus.setCode("test");
-    	accountStatus.setLabel("test");
-    	
-    	System.out.println("ok");
-        response.getWriter().write("Index");
+        try{
+            repositoryService.loadData();
+            response.getWriter().print("Loading data into database is ok");
+
+        }catch (Exception e){
+            response.getWriter().print("Loading data into database is ko");
+        }finally {
+            response.getWriter().close();
+        }
     }
 }
