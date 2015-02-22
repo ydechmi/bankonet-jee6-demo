@@ -33,6 +33,13 @@
         </dependency>
 
         <dependency>
+            <groupId>com.yd.bankonet</groupId>
+            <artifactId>bankonet-jee6-demo-ejb</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <type>ejb-client</type>
+        </dependency>
+
+        <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
         </dependency>
