@@ -12,6 +12,10 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "LANGUAGES")
+@NamedQueries({
+        @NamedQuery(name="Language.findByCode",
+                query="SELECT a FROM Language a where a.code=:code")
+})
 @AttributeOverrides({
         @AttributeOverride(name = "id", column = @Column(name = "LGE_ID")),
         @AttributeOverride(name = "code", column = @Column(name = "LGE_CODE", unique = true)),
