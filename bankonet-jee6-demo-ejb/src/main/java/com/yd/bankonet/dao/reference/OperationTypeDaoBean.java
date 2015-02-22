@@ -25,7 +25,5 @@ public class OperationTypeDaoBean extends AbstractDao<OperationType,Integer> {
 	public Class<OperationType> getEntityClass() {
 		return OperationType.class;
 	}
-    
-    
 
 }

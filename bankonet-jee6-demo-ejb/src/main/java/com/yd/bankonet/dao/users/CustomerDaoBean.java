@@ -25,7 +25,5 @@ public class CustomerDaoBean extends AbstractDao<Customer,Long> {
 	public Class<Customer> getEntityClass() {
 		return Customer.class;
 	}
-    
-    
 
 }

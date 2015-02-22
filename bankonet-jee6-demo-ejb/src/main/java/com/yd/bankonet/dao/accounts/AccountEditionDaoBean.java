@@ -27,7 +27,5 @@ public class AccountEditionDaoBean extends AbstractDao<AccountEdition, Long> {
 	public Class<AccountEdition> getEntityClass() {
 		return AccountEdition.class;
 	}
-    
-    
 
 }

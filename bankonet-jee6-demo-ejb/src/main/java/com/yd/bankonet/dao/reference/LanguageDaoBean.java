@@ -25,7 +25,5 @@ public class LanguageDaoBean extends AbstractDao<Language,Integer> {
 	public Class<Language> getEntityClass() {
 		return Language.class;
 	}
-    
-    
 
 }

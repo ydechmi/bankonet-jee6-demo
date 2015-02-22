@@ -25,7 +25,5 @@ public class AccountTypeDaoBean extends AbstractDao<AccountType,Integer> {
 	public Class<AccountType> getEntityClass() {
 		return AccountType.class;
 	}
-    
-    
 
 }

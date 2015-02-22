@@ -25,7 +25,5 @@ public class CheckingAccountDaoBean extends AbstractDao<CheckingAccount,Long> {
 	public Class<CheckingAccount> getEntityClass() {
 		return CheckingAccount.class;
 	}
-    
-    
 
 }

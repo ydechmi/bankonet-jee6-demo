@@ -25,7 +25,7 @@ public class AccountCreditDaoBean extends AbstractDao<AccountCredit, Long> {
 	public Class<AccountCredit> getEntityClass() {
 		return AccountCredit.class;
 	}
-    
-    
+
+
 
 }

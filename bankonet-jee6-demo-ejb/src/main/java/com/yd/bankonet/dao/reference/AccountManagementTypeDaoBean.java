@@ -25,7 +25,5 @@ public class AccountManagementTypeDaoBean extends AbstractDao<AccountManagementT
 	public Class<AccountManagementType> getEntityClass() {
 		return AccountManagementType.class;
 	}
-    
-    
 
 }

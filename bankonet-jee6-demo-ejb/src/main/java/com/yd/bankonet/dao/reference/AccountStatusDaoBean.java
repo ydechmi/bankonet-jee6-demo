@@ -25,7 +25,5 @@ public class AccountStatusDaoBean extends AbstractDao<AccountStatus,Integer> {
 	public Class<AccountStatus> getEntityClass() {
 		return AccountStatus.class;
 	}
-    
-    
 
 }
