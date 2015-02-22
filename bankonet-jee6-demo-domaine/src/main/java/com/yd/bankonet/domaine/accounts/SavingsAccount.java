@@ -3,15 +3,17 @@
  */
 package com.yd.bankonet.domaine.accounts;
 
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 
 /**
  * @author ydechmi
  */
 @Entity
+@NamedQueries({
+        @NamedQuery(name="SavingsAccount.findByCode",
+                query="SELECT a FROM SavingsAccount a where a.codeBank=:codeBank")
+})
 @DiscriminatorValue("CEP")
 public class SavingsAccount extends Account {
 
