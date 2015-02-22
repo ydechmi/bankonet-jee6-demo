@@ -14,6 +14,10 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "OPERATION_TYPE")
+@NamedQueries({
+        @NamedQuery(name="OperationType.findByCode",
+                query="SELECT a FROM OperationType a where a.code=:code")
+})
 @AttributeOverrides({
         @AttributeOverride(name = "id", column = @Column(name = "OPT_ID")),
         @AttributeOverride(name = "code", column = @Column(name = "OPT_CODE", unique = true)),
