@@ -1,13 +1,9 @@
 package com.yd.bankonet.dao.reference;
 
 import com.yd.bankonet.domaine.reference.Language;
-import org.jboss.arquillian.container.test.api.Deployment;
+import com.yd.bankonet.test.JavaArchiveDeployment;
 import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
-import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -15,22 +11,10 @@ import javax.ejb.EJB;
 
 
 @RunWith(Arquillian.class)
-public class LanguageDaoBeanTest {
+public class LanguageDaoBeanTest extends JavaArchiveDeployment {
 
     @EJB
     LanguageDaoBean languageDaoBean;
-
-    @Deployment
-    public static JavaArchive createDeployment() {
-        return ShrinkWrap.create(JavaArchive.class)
-                .addClass(LanguageDaoBean.class)
-                .addAsResource("test-persistence.xml", "META-INF/persistence.xml")
-                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
-}
-    @Before
-    public void setUp() throws Exception {
-
-    }
 
     @Test
     public void testGetEntityClass() throws Exception {
@@ -79,7 +63,7 @@ public class LanguageDaoBeanTest {
     }
 
     @Test
-    public void testFindById() throws Exception {
+        public void testFindById() throws Exception {
         Language language=new Language("FR","French");
         languageDaoBean.persist(language);
         Integer id=language.getId();
@@ -89,4 +73,14 @@ public class LanguageDaoBeanTest {
         Assert.assertNotNull(entity);
         languageDaoBean.removeById(entity.getId());
     }
+
+    @Test
+    public void testFindAll() throws Exception {
+        Language language=new Language("FR","French");
+        languageDaoBean.persist(language);
+        int size=languageDaoBean.findAll().size();
+        Assert.assertTrue(size == 1);
+        languageDaoBean.removeById(language.getId());
+    }
+
 }
