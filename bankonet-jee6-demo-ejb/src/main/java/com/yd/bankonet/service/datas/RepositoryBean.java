@@ -4,6 +4,7 @@ import com.yd.bankonet.dao.reference.*;
 import com.yd.bankonet.dao.users.CustomerDaoBean;
 import com.yd.bankonet.dao.users.UserDaoBean;
 import com.yd.bankonet.domaine.reference.*;
+import com.yd.bankonet.domaine.users.User;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -133,14 +134,31 @@ public class RepositoryBean implements RepositoryService{
     /**
      *
      */
-    private void insertCustomer() {
-
-    }
-
-    /**
-     *
-     */
     private void insertUsers() {
+        User userCli=new User();
+        userCli.setAlertUpdate(true);
+        userCli.setFirstName("Jerome");
+        userCli.setLastName("Dupont");
+        userCli.setLogin("jdupont");
+        userCli.setPassword("123456");
+        userCli.setEmail("jdupont@sample.com");
+        User userAdmin=new User();
+        userAdmin.setAlertUpdate(true);
+        userAdmin.setFirstName("admin");
+        userAdmin.setLastName("admin");
+        userAdmin.setLogin("admin");
+        userAdmin.setPassword("admin");
+        userAdmin.setEmail("admin@sample.com");
+        User userMana=new User();
+        userMana.setAlertUpdate(true);
+        userMana.setFirstName("manager");
+        userMana.setLastName("manager");
+        userMana.setLogin("manager");
+        userMana.setPassword("manager");
+        userMana.setEmail("manager@sample.com");
+        userDao.persist(userCli);
+        userDao.persist(userAdmin);
+        userDao.persist(userMana);
 
     }
 
@@ -149,7 +167,6 @@ public class RepositoryBean implements RepositoryService{
         insertAccountManagementType();
         insertAccountStatus();
         insertAccountTypes();
-        insertCustomer();
         insertLanguages();
         insertOperationTypes();
         insertRoles();
