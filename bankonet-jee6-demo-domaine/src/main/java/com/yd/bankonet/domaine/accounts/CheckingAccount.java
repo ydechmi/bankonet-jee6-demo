@@ -3,15 +3,16 @@
  */
 package com.yd.bankonet.domaine.accounts;
 
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorValue;
-import javax.persistence.Entity;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 /**
  * @author ydechmi
  */
 @Entity
+@NamedQueries({
+        @NamedQuery(name="CheckingAccount.findByCode",
+                query="SELECT a FROM CheckingAccount a where a.codeBank=:codeBank")
+})
 @DiscriminatorValue("CCO")
 public class CheckingAccount extends Account {
 
