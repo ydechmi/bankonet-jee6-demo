@@ -15,6 +15,10 @@ import java.util.List;
  */
 @Entity
 @Table(name = "ROLES")
+@NamedQueries({
+        @NamedQuery(name="Role.findByCode",
+                query="SELECT a FROM Role a where a.code=:code")
+})
 @AttributeOverrides({
         @AttributeOverride(name = "id", column = @Column(name = "ROL_ID")),
         @AttributeOverride(name = "code", column = @Column(name = "ROL_CODE", unique = true)),
