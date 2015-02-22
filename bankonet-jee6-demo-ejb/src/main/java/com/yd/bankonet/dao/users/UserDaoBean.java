@@ -25,6 +25,4 @@ public class UserDaoBean extends AbstractDao<User,Long> {
 	public Class<User> getEntityClass() {
 		return User.class;
 	}
-
-    
 }
