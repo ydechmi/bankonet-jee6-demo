@@ -18,6 +18,13 @@
         <plugins>
             <plugin>
                 <artifactId>maven-ejb-plugin</artifactId>
+                <configuration>
+                    <generateClient>true</generateClient>
+                    <clientExcludes>
+                        <clientExclude>com/yd/bankonet/dao/**</clientExclude>
+                        <clientExclude>**/*Bean.class</clientExclude>
+                    </clientExcludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
