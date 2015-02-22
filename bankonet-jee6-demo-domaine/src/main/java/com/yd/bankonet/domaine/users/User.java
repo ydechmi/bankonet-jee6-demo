@@ -45,7 +45,7 @@ public class User extends AbstractEntity<Long> {
     @Column(name = "USE_LOGIN", length = 50, nullable = false, unique = true)
     private String login;
 
-    @Column(name = "USE_PASSWORD", length = 50, nullable = false, unique = true)
+    @Column(name = "USE_PASSWORD", length = 50, nullable = false, unique = false)
     private String password;
 
     @OneToOne
@@ -62,7 +62,7 @@ public class User extends AbstractEntity<Long> {
             joinColumns = @JoinColumn(name = "URA_USE_ID", referencedColumnName = "USE_ID"),
             inverseJoinColumns = @JoinColumn(name = "URA_ROL_ID", referencedColumnName = "ROL_ID")
     )
-    private List<Role> roles = new ArrayList<Role>();
+    private List<Role> roles = new ArrayList<>();
 
 
     /**
@@ -222,19 +222,6 @@ public class User extends AbstractEntity<Long> {
         this.lastName = lastName;
     }
 
-    /**
-     * @return the customer
-     */
-    public Customer getClient() {
-        return customer;
-    }
-
-    /**
-     * @param customer the client to set
-     */
-    public void setClient(Customer customer) {
-        this.customer = customer;
-    }
 
 
 }
