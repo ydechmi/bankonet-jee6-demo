@@ -3,11 +3,10 @@
  */
 package com.yd.bankonet.web.controller;
 
-import java.io.Serializable;
-import java.util.Locale;
-
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
+import java.io.Serializable;
+import java.util.Locale;
 
 
 
@@ -32,17 +31,17 @@ public abstract class AbstractControllerBean implements Serializable{
 	}
 	
 	public void addError(String message){
-		FacesMessage facesMessage=new FacesMessage(FacesMessage.SEVERITY_ERROR,"",message);
+		FacesMessage facesMessage=new FacesMessage(FacesMessage.SEVERITY_ERROR,message,"");
 		FacesContext.getCurrentInstance().addMessage(null, facesMessage);
 	}
 	
 	public void addWarning(String message){
-		FacesMessage facesMessage=new FacesMessage(FacesMessage.SEVERITY_WARN,"",message);
+		FacesMessage facesMessage=new FacesMessage(FacesMessage.SEVERITY_WARN,message,"");
 		FacesContext.getCurrentInstance().addMessage(null, facesMessage);
 	}
 	
 	public void addInfo(String message){
-		FacesMessage facesMessage=new FacesMessage(FacesMessage.SEVERITY_INFO,"",message);
+		FacesMessage facesMessage=new FacesMessage(FacesMessage.SEVERITY_INFO,message,"");
 		FacesContext.getCurrentInstance().addMessage(null, facesMessage);
 	}
 	
