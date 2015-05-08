@@ -5,6 +5,8 @@
 		
 		<jta-data-source>java:/jdbc/BankonetDB</jta-data-source>
 		<!-- <non-jta-data-source>jdbc/BankonetDS</non-jta-data-source>-->
+		<class>com.yd.bankonet.domaine.AbstractEntity</class>
+		<class>com.yd.bankonet.domaine.AbstractReference</class>
 		<class>com.yd.bankonet.domaine.accounts.Account</class>
 		<class>com.yd.bankonet.domaine.accounts.CheckingAccount</class>
 		<class>com.yd.bankonet.domaine.accounts.AccountCredit</class>
@@ -14,8 +16,6 @@
 		<class>com.yd.bankonet.domaine.users.Customer</class>
 		<class>com.yd.bankonet.domaine.reference.Role</class>
 		<class>com.yd.bankonet.domaine.reference.AccountStatus</class>
-		<class>com.yd.bankonet.domaine.AbstractEntity</class>
-		<class>com.yd.bankonet.domaine.AbstractReference</class>
 		<class>com.yd.bankonet.domaine.reference.Language</class>
 		<class>com.yd.bankonet.domaine.reference.AccountType</class>
 		<class>com.yd.bankonet.domaine.reference.AccountManagementType</class>
@@ -29,6 +29,7 @@
             <property name="eclipselink.logging.level" value="ALL" />
             <property name="eclipselink.logging.parameters" value="true" />
             <property name="eclipselink.logging.file" value="D:\logs\jbossEclipselink.log"/>
+			<property name="eclipselink.weaving.internal" value="false"/>
 		</properties>
 	</persistence-unit>
 </persistence>
