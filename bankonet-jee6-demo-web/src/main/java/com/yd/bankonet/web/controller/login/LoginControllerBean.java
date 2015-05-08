@@ -3,11 +3,13 @@
  */
 package com.yd.bankonet.web.controller.login;
 
-import javax.faces.bean.ManagedBean;
-import javax.inject.Inject;
-
+import com.yd.bankonet.service.security.SecurityService;
 import com.yd.bankonet.web.controller.AbstractControllerBean;
 import com.yd.bankonet.web.view.login.LoginViewBean;
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.inject.Inject;
 
 /**
  * @author ydechmi
@@ -23,11 +25,14 @@ public class LoginControllerBean extends AbstractControllerBean{
 	@Inject
 	private LoginViewBean view;
 
+	@EJB
+	SecurityService securityService;
+
 	/**
-	 * 
+	 * Default Constructor
 	 */
 	public LoginControllerBean() {
-		// TODO Auto-generated constructor stub
+
 	}
 
 
@@ -47,11 +52,13 @@ public class LoginControllerBean extends AbstractControllerBean{
 
 
 	public String login(){
-		//FacesContext.getCurrentInstance().getViewRoot().setLocale(new Locale("fr"));
-		System.out.println("OK");
-		String out="/faces/home/home";
-		System.out.println(out);
-		return "success";
+		boolean authentication=securityService.checkUserLogin(view.getId(),view.getPassword());
+		if(authentication){
+			return "/faces/accounts/home.xhtml";
+		}else {
+			addError("Login or password is bad");
+			return "/faces/security/login.xhtml";
+		}
 	}
 
 	
