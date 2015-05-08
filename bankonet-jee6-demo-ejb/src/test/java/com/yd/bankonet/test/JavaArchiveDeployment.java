@@ -18,6 +18,7 @@ public class JavaArchiveDeployment {
         archive.addPackage("com/yd/bankonet/dao/reference");
         archive.addPackage("com/yd/bankonet/dao/users");
         archive.addPackage("com/yd/bankonet/service/datas");
+        archive.addPackage("com/yd/bankonet/service/security");
         archive.addAsResource("test-persistence.xml", "META-INF/persistence.xml");
         archive.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
         return archive;
