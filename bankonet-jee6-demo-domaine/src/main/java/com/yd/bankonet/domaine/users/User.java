@@ -18,6 +18,9 @@ import java.util.List;
  */
 @Entity
 @Table(name = "USERS")
+@NamedQueries({
+        @NamedQuery(name="findByLogin", query="SELECT user FROM User user where user.login=:login")
+})
 @AttributeOverride(name = "id", column = @Column(name = "USE_ID", nullable = false))
 public class User extends AbstractEntity<Long> {
 
