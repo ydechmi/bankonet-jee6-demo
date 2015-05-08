@@ -64,7 +64,7 @@ public class RepositoryBean implements RepositoryService{
      */
     private void insertRoles() {
         List<Role> roles=new ArrayList<>(3);
-        roles.add(new Role("ADMINSTRATEUR","Administrateur"));
+        roles.add(new Role("ADMINISTRATEUR","Administrateur"));
         roles.add(new Role("MANAGER","Manager"));
         roles.add(new Role("CLIENT","Client"));
 
@@ -122,9 +122,9 @@ public class RepositoryBean implements RepositoryService{
      */
     private void insertOperationTypes() {
         List<OperationType> operationTypes=new ArrayList<>(3);
-        operationTypes.add(new OperationType("RET","Retrait"));
-        operationTypes.add(new OperationType("CRE","Crédit"));
-        operationTypes.add(new OperationType("TRA","Transfert"));
+        operationTypes.add(new OperationType("RET", "Retrait"));
+        operationTypes.add(new OperationType("CRE", "Crédit"));
+        operationTypes.add(new OperationType("TRA", "Transfert"));
 
         for(OperationType operationType :operationTypes){
             operationTypeDao.persist(operationType);
@@ -132,9 +132,10 @@ public class RepositoryBean implements RepositoryService{
     }
 
     /**
-     *
+     * Method to load users
      */
     private void insertUsers() {
+        Role role=null;
         User userCli=new User();
         userCli.setAlertUpdate(true);
         userCli.setFirstName("Jerome");
@@ -142,6 +143,11 @@ public class RepositoryBean implements RepositoryService{
         userCli.setLogin("jdupont");
         userCli.setPassword("123456");
         userCli.setEmail("jdupont@sample.com");
+        role=roleDao.findByCode("CLIENT");
+        userCli.getRoles().add(role);
+        userDao.persist(userCli);
+
+        //Admin
         User userAdmin=new User();
         userAdmin.setAlertUpdate(true);
         userAdmin.setFirstName("admin");
@@ -149,6 +155,11 @@ public class RepositoryBean implements RepositoryService{
         userAdmin.setLogin("admin");
         userAdmin.setPassword("admin");
         userAdmin.setEmail("admin@sample.com");
+        role=roleDao.findByCode("ADMINISTRATEUR");
+        userAdmin.getRoles().add(role);
+        userDao.persist(userAdmin);
+
+        //Manager
         User userMana=new User();
         userMana.setAlertUpdate(true);
         userMana.setFirstName("manager");
@@ -156,8 +167,8 @@ public class RepositoryBean implements RepositoryService{
         userMana.setLogin("manager");
         userMana.setPassword("manager");
         userMana.setEmail("manager@sample.com");
-        userDao.persist(userCli);
-        userDao.persist(userAdmin);
+        role=roleDao.findByCode("MANAGER");
+        userMana.getRoles().add(role);
         userDao.persist(userMana);
 
     }
@@ -167,8 +178,8 @@ public class RepositoryBean implements RepositoryService{
         insertAccountManagementType();
         insertAccountStatus();
         insertAccountTypes();
-        insertLanguages();
         insertOperationTypes();
+        insertLanguages();
         insertRoles();
         insertUsers();
     }
