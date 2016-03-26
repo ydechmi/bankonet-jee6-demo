@@ -4,7 +4,5 @@
 *.iml
 *.iws
 *.ipr
-bankonet-jee6-demo-domaine/target/
-bankonet-jee6-demo-web/target/
-bankonet-jee6-demo-ejb/target/
-bankonet-jee6-demo-ear/target/
+*/target/
+

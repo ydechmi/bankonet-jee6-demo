@@ -34,6 +34,18 @@
         <module>bankonet-jee6-demo-web</module>
         <module>bankonet-jee6-demo-ear</module>
     </modules>
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>release</name>
+            <url>http://docker-server:32769/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>snapshot</name>
+            <url>http://docker-server:32769/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     <dependencyManagement>
         <dependencies>
             <dependency>
